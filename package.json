@@ -11,6 +11,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
+    "test": "pnpm run test:client && pnpm run test:server",
     "test:client": "cd client && pnpm test",
     "test:server": "cd server && pnpm test"
   },
