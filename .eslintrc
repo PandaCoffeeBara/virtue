@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb",
+        "airbnb-typescript"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "overrides": [
+        {
+            "files": ["*.ts", "*.tsx"]
+            // TypeScript specific rules
+        },
+        {
+            "files": ["*.js", "*.jsx"],
+            "parser": "espree" // Default ESLint parser for JavaScript files
+            // JavaScript specific rules
+        }
+    ],
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+      "target": "es2020", // Modern target for better optimization
+      "module": "commonjs", // CommonJS for Node.js compatibility on the server-side
+      "lib": ["es2020", "dom"], // Includes DOM library for the client-side
+      "allowJs": true, // Allow JavaScript files to be compiled
+      "skipLibCheck": true, // Skip type checking of all declaration files (*.d.ts)
+      "esModuleInterop": true, // Enables compatibility with Babel/TypeScript default imports
+      "strict": true, // Enable all strict type-checking options
+      "forceConsistentCasingInFileNames": true, // Ensure consistent casing for file names
+      "moduleResolution": "node", // Use Node.js style module resolution
+      "resolveJsonModule": true, // Allow importing json modules
+      "isolatedModules": true, // Each file is treated as a separate module
+      "noEmit": true, // Do not emit outputs (useful when using Babel alongside TypeScript)
+      "jsx": "react-jsx", // Support JSX in .tsx files
+      "baseUrl": "./", // Base directory to resolve non-relative module names
+      "paths": {
+        "*": ["node_modules/*"], // Support module resolution for npm packages
+        "src/*": ["src/*"] // Support absolute import paths from the src directory
+      },
+      "outDir": "./build" // Compile .ts files to ./build folder for server-side
+    },
+    "include": [
+        "client/**/*", // Include the client directory
+        "server/**/*", // Include the server directory  
+    ],
+    "exclude": [
+      "node_modules", // Exclude the node_modules directory
+      "**/*.spec.ts", // Exclude test files
+      "**/*.test.ts",
+      "build", // Exclude the build directory to prevent recursive type-checking
+      "commitlint.config.js" // Exclude commitlint.config.js to prevent errors
+    ]
+  }
+  

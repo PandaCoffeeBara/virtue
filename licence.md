@@ -1,4 +1,10 @@
+```
 MIT License
+===========
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+```
 
 Copyright (c) 2024 Angel Petrov
 
@@ -19,3 +25,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+## Contributing
+Angel Petrov is the sole contributor to this project. If you would like to contribute, please contact me at angel.a.petrov2@gmail.com

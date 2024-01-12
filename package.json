@@ -1,0 +1,75 @@
+{
+  "name": "virtue",
+  "version": "1.0.0",
+  "description": "## Description Project Virtue is a sophisticated React-based web application that serves as a personal dashboard for tracking and achieving goals. Integrated with health-tracking APIs like Strava and Google Fit, it offers users the ability to visualize their progress through comprehensive analytics and charts.",
+  "main": "index.js",
+  "scripts": {
+    "install:client": "cd client && pnpm install",
+    "install:server": "cd server && pnpm install",
+    "start:client": "cd client && pnpm start",
+    "start:server": "cd server && pnpm start",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write .",
+    "test:client": "cd client && pnpm test",
+    "test:server": "cd server && pnpm test"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PandaCoffeeBara/virtue.git"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "keywords": [
+    "goal-tracking",
+    "personal-development",
+    "react",
+    "nodejs",
+    "api-integration",
+    "data-visualization",
+    "fitness-tracking",
+    "mood-tracking",
+    "productivity",
+    "lifestyle"
+  ],
+  "author": "Angel Petrov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PandaCoffeeBara/virtue/issues"
+  },
+  "homepage": "https://github.com/PandaCoffeeBara/virtue#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard-with-typescript": "^43.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.0",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
